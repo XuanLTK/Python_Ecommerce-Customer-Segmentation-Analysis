@@ -1,4 +1,72 @@
-# **Part 1: Computational Thinking**
+# Project Title: [Python] E-commerce Customer Segmentation Analysis  
+Author: [Xuan Luong]  
+Date: 2024 
+Tools Used: Python  
+
+---
+
+## 📑 Table of Contents  
+1. [📌 Background & Overview](#-background--overview)  
+2. [📂 Dataset Description & Data Structure](#-dataset-description--data-structure)
+3. [⚒ Main Process](#-main-process) 
+4. [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)
+
+---
+
+## 📌 Background & Overview
+
+### SuperStore Company Overview 🎉  
+
+SuperStore is a global retail company 🌎, which means it has a large number of customers.   
+
+On the occasion of Christmas and New Year 🎄🎆, the Marketing Department wants to run marketing campaigns to show appreciation to customers who have supported the company throughout the year. They also aim to tap into potential customers who could become loyal patrons.  
+
+However, the Marketing Department has not yet segmented this year’s customers because the dataset is too large to process manually as in previous years. Therefore, they have requested the Data Analytics Department for support in implementing a customer segmentation classification problem to deploy tailored marketing programs for each customer group.  
+
+The Marketing Director also proposed using the RFM model. However, in the past, when the company was smaller, the team could classify and calculate using Excel. Now, with a significant amount of data, they hope the Data Department will develop a process for evaluating segmentation using Python programming. 🐍  
+
+### Objective:
+  This project uses Python to analyze retail sale data from e-commerce to:
+  
+✔️ Segment customers by using the RFM model to enhance marketing strategies for E-commerce Retail Company
+
+✔️ Suggest marketing ideas through precise segmentation of customers.
+
+### 👤 Who is this project for?  
+
+✔️ Marketing manager
+
+✔️ R&D manager
+
+
+---
+
+## 📂 Dataset Description & Data Structure  
+
+### 📌 Data Source  
+This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.	
+
+**Data filename:** ecommerce_retail.xlsx								
+The Excel file contains 2 sheets
+
+**- Sheet 1: ecommerce_detail**
+  Include 8 columns:
+  - InvoiceNo: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'C', it indicates a cancellation.									
+  - StockCode: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.									
+  - Description: Product (item) name. Nominal.									
+  - Quantity: The quantities of each product (item) per transaction. Numeric.									
+  - InvoiceDate: Invoice Date and time. Numeric, the day and time when each transaction was generated.									
+  - UnitPrice: Unit price. Numeric, Product price per unit in sterling.									
+  - CustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
+  - Country: Country name. Nominal, the name of the country where each customer resides.
+
+**- Sheet 2: Segmentation**
+  Include 2 columns, containing customer group classification information
+
+---
+## ⚒ Main Process
+
+## **Part 1: Computational Thinking**
 
 ## I. Decomposition  
 
@@ -76,7 +144,11 @@ Currently, there is an Excel file containing 2 sheets:
     - Number of purchases.  
     - Total revenue.  
     - Locations.  
-    - Best-selling products in each segment.  
+    - Best-selling products in each segment.
+
+
+---
+
 
 # **Insights and Recommendations**  
 
@@ -97,4 +169,10 @@ Currently, there is an Excel file containing 2 sheets:
 
   ⇒ In this Christmas - New Year marketing campaign, Superstore needs to prioritize its efforts to promote the Potential Loyalist group to become Loyal and Champions members and then find ways to reconnect with customers in the At Risk group.  
 
-## **Actionable Tips for Each Segment**
+## Recommendations
+For the retail model of Superstore, there are several suggestions as follows:
+
+- The Marketing Team should focus on the Recency metric and implement campaigns to attract customer interest and brand awareness. Besides the top champions group, marketing should pay attention to launching campaigns targeted at the Hibernating and Lost customer groups. These two customer groups represent the second and third largest proportions of the total customer segments and have a high risk of being lost, which could lead to significant customer loss.
+
+- The Sales Team should prioritize both the Frequency and Monetary metrics. It is important to maintain contact with Loyal customers to quickly introduce them to the latest products, creating potential revenue growth for the company. Additionally, they should also reach out and build relationships with new customers, the At-risk group, and the Potential Loyalist group. These customer groups have an average proportion and a lot of potential to become loyal and committed customers of the company.
+
