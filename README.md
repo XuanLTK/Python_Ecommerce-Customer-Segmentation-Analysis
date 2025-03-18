@@ -1,4 +1,4 @@
-# Project Title: [Python] E-commerce Customer Segmentation Analysis  
+# [Python] E-commerce Customer Segmentation Analysis  
 Author: [Xuan Luong]  
 
 Date: 2024 
