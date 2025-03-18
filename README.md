@@ -1,6 +1,8 @@
 # Project Title: [Python] E-commerce Customer Segmentation Analysis  
 Author: [Xuan Luong]  
+
 Date: 2024 
+
 Tools Used: Python  
 
 ---
@@ -49,7 +51,8 @@ This is a transnational data set which contains all the transactions occurring b
 **Data filename:** ecommerce_retail.xlsx								
 The Excel file contains 2 sheets
 
-**- Sheet 1: ecommerce_detail**
+**Sheet 1: ecommerce_detail**
+  
   Include 8 columns:
   - InvoiceNo: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'C', it indicates a cancellation.									
   - StockCode: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.									
@@ -60,15 +63,16 @@ The Excel file contains 2 sheets
   - CustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.
   - Country: Country name. Nominal, the name of the country where each customer resides.
 
-**- Sheet 2: Segmentation**
-  Include 2 columns, containing customer group classification information
+**Sheet 2: Segmentation**
+
+Include 2 columns, containing customer group classification information
 
 ---
 ## ⚒ Main Process
 
 ## **Part 1: Computational Thinking**
 
-## I. Decomposition  
+### I. Decomposition  
 
 To enhance the effectiveness of the marketing strategy and drive customer engagement, we identify two critical issues that need to be addressed:  
 
@@ -96,7 +100,7 @@ Once customer segments have been defined, the next step is to develop targeted m
 
 Through effective segmentation and tailored marketing strategies, we aim to boost customer engagement and loyalty, ultimately enhancing the overall profitability of the Superstore.   
 
-## II. Pattern Recognition  
+### II. Pattern Recognition  
 
 Currently, there is an Excel file containing 2 sheets:  
 
@@ -110,7 +114,7 @@ Currently, there is an Excel file containing 2 sheets:
     - This sheet contains information that allows customer classification.  
     - There are no missing values and no duplicates.  
 
-## III. Abstraction  
+### III. Abstraction  
 
 1. Load dataset.  
 2. EDA → clean data.  
@@ -128,7 +132,7 @@ Currently, there is an Excel file containing 2 sheets:
     - Propose suitable marketing programs based on the current situation.  
     - Suggest to the Marketing and Sales team which of the three metrics R, F, or M should be prioritized in the Superstore's retail model.  
 
-## IV. Algorithm Design  
+### IV. Algorithm Design  
 
 - Create a DataFrame containing the following columns:  
     - For each score:  
@@ -146,13 +150,15 @@ Currently, there is an Excel file containing 2 sheets:
     - Locations.  
     - Best-selling products in each segment.
 
+## **Part 2: Create Python script**
+[Analysis Results]([Python]_Retail_Industry_Customer_Segmentation_project.ipynb)
 
 ---
 
 
-# **Insights and Recommendations**  
+## 🔎 Final Conclusion & Recommendations
 
-## **1. Recency, Frequency, and Monetary Value of Superstore:**  
+### **1. Recency, Frequency, and Monetary Value of Superstore:**  
 
 - As a retailer, Superstore may prioritize Recency and Frequency over their Monetary since their most loyal shoppers may make many purchases throughout the year at lower Average Transaction Sizes. However, Superstore's Recency and Frequency do not have many positive signs.  
 - The mean of Frequency is **6 times**, which is low for a retail company. This means customer loyalty is not high.  
@@ -160,7 +166,7 @@ Currently, there is an Excel file containing 2 sheets:
 
   => Those are some warnings for Superstore to focus more on Recency and Frequency performance.  
 
-## **2. Segments of Superstore:**  
+### **2. Segments of Superstore:**  
 
 - The two segments with the highest proportion of customers are **Potential Loyalist (14.29%)** and **At Risk (12.14%)**.  
 - Negative segments such as **Hibernating** and **Lost** accounted for a high proportion of customers, **11.38%** and **10.49%**, respectively. However, these two groups account for less than **8%** of revenue.  
@@ -169,7 +175,8 @@ Currently, there is an Excel file containing 2 sheets:
 
   ⇒ In this Christmas - New Year marketing campaign, Superstore needs to prioritize its efforts to promote the Potential Loyalist group to become Loyal and Champions members and then find ways to reconnect with customers in the At Risk group.  
 
-## Recommendations
+### Recommendations
+
 For the retail model of Superstore, there are several suggestions as follows:
 
 - The Marketing Team should focus on the Recency metric and implement campaigns to attract customer interest and brand awareness. Besides the top champions group, marketing should pay attention to launching campaigns targeted at the Hibernating and Lost customer groups. These two customer groups represent the second and third largest proportions of the total customer segments and have a high risk of being lost, which could lead to significant customer loss.
