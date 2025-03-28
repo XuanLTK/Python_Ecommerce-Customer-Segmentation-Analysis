@@ -150,7 +150,7 @@ Currently, there is an Excel file containing 2 sheets:
     - Locations.  
     - Best-selling products in each segment.
 
-## **Part 2: Create Python script**
+## **Part 2: Data processing & analysis**
 [Analysis Results]([Python]_Retail_Industry_Customer_Segmentation_project.ipynb)
 
 ---
